@@ -1,0 +1,15 @@
+CREATE DATABASE final_0907-23-17959
+CREATE TABLE `productos` (
+  `codigo` int(10) NOT NULL,
+  `nombre` text NOT NULL,
+  `precio` double(10,0) NOT NULL,
+  `existencia` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+INSERT INTO `productos` (`codigo`, `nombre`, `precio`, `existencia`) VALUES
+(1, 'Jugo de Naranja', 10, 20),
+(2, 'Galletas', 5, 50),
+(3, 'Bolsa de Dulces', 7, 15),
+(4, 'Bolsa de Cafe', 17, 30),
+(5, 'Coca Cola', 22, 15);
+COMMIT;
